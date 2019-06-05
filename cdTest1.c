@@ -5,7 +5,7 @@ int sub(char *param)
 {
 char buffer[8];
 
-    strcpy(buffer, param);
+    strncpy(buffer, param, strlen(param));
 
     printf(buffer);
     
