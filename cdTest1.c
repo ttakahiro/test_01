@@ -8,6 +8,8 @@ char buffer[8];
     strncpy(buffer, param, strlen(param));
 
     printf(buffer);
+    
+    return 0;
 }
 
 int main(int argc, char *argv[])
