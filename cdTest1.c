@@ -1,11 +1,11 @@
 #include <stdio.h>
-
+#include <string.h>
 
 int sub(char *param)
 {
 char buffer[8];
 
-    strcpy(buffer, param);
+    strncpy(buffer, param, strlen(param));
 
     printf(buffer);
 }
