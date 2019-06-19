@@ -11,12 +11,19 @@ char buffer[8];
     
     return 0;
 }
+void sub2(char msg[22])
+{
+	printf(msg);
+}
 
 int main(int argc, char *argv[])
 {
+char message[20];
 
     sub("Overflow message\n");
-
+    strcpy(message, "tes");
+    sub2(message);
+    
     return 0;
 
 }
