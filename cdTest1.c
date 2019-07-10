@@ -27,7 +27,7 @@ int pos;
     
     for(int i=0;i<argc;i++)
     {
-		pos += snprintf(message,sizeof(message), "%s",  argv[i]);
+		pos += snprintf(message+pos,sizeof(message), "%s",  argv[i]);
     }
     
     return 0;
