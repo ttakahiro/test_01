@@ -19,7 +19,7 @@ void sub2(char msg[22])
 int main(int argc, char *argv[])
 {
 char message[20];
-int pos;
+int pos = 0;
 
     sub("Overflow message\n");
     strcpy(message, "tes");
@@ -27,7 +27,7 @@ int pos;
     
     for(int i=0;i<argc;i++)
     {
-		pos += snprintf(message+pos,sizeof(message), "%s",  argv[i]);
+		pos += snprintf(message+pos,sizeof(message)-pos, "%s",  argv[i]);
     }
     
     return 0;
