@@ -20,12 +20,13 @@ int main(int argc, char *argv[])
 {
 char message[20];
 int pos = 0;
+int i;
 
     sub("Overflow message\n");
     strcpy(message, "tes");
     sub2(message);
     
-    for(int i=0;i<argc;i++)
+    for(i=0;i<argc;i++)
     {
 		pos += snprintf(message+pos,sizeof(message)-pos, "%s",  argv[i]);
     }
