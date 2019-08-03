@@ -30,6 +30,11 @@ int i;
     {
 		pos += snprintf(message+pos,sizeof(message)-pos, "%s",  argv[i]);
     }
+
+    for(i=0;i<10;i--)
+    {
+		printf("Hello\n");
+    }
     
     return 0;
 
