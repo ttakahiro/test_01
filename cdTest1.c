@@ -22,6 +22,7 @@ int main(int argc, char *argv[])
 {
 char message[20];
 int pos = 0;
+int i;
 int len,*ptr;
 
     sub("Overflow message\n");
