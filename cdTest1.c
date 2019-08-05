@@ -11,9 +11,9 @@ char buffer[8];
     
     return 0;
 }
-void sub2(char msg[22], int *len)
+void sub2(char msg[22])
 {
-	*len = printf(msg);
+	printf(msg);
 	
 	
 }
@@ -22,8 +22,7 @@ int main(int argc, char *argv[])
 {
 char message[20];
 int pos = 0;
-int i;
-int len;
+int len,*ptr;
 
     sub("Overflow message\n");
     strcpy(message, "tes");
@@ -34,8 +33,8 @@ int len;
     {
 		pos += snprintf(message+pos,sizeof(message)-pos, "%s",  argv[i]);
     }
-
-    for(i=0;i<10;i--)
+    ptr = &len;
+    for(*ptr=0;*ptr<10;*ptr--)
     {
 		printf("Hello\n");
     }
