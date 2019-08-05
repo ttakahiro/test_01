@@ -11,9 +11,11 @@ char buffer[8];
     
     return 0;
 }
-void sub2(char msg[22])
+void sub2(char msg[22], int *len)
 {
-	printf(msg);
+	*len = printf(msg);
+	
+	
 }
 
 int main(int argc, char *argv[])
@@ -21,10 +23,12 @@ int main(int argc, char *argv[])
 char message[20];
 int pos = 0;
 int i;
+int len;
 
     sub("Overflow message\n");
     strcpy(message, "tes");
-    sub2(message);
+    len = 10;
+    sub2(message,&len);
     
     for(i=0;i<argc;i++)
     {
