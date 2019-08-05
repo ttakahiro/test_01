@@ -28,7 +28,7 @@ int len,*ptr;
     sub("Overflow message\n");
     strcpy(message, "tes");
     len = 10;
-    sub2(message,&len);
+    sub2(message);
     
     for(i=0;i<argc;i++)
     {
